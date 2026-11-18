@@ -1,0 +1,46 @@
+name: Refresh Legalyti content radar
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_ai:
+        description: "Generate new opportunity hypotheses with the configured LLM API (may incur API charges)"
+        type: boolean
+        required: false
+        default: false
+  schedule:
+    - cron: "0 7 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Refresh public competitor pages and press listings
+        run: python scripts/refresh.py
+      - name: Generate AI opportunity hypotheses (manual runs only)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.run_ai == true }}
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+        run: python scripts/suggest.py
+      - name: Commit updated snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/competitor_content.json data/competitor_news.json data/news_sources.json data/generated_opportunities.json
+          if git diff --cached --quiet; then
+            echo "No radar data changed."
+          else
+            git commit -m "Refresh Legalyti competitor radar"
+            git push
+          fi

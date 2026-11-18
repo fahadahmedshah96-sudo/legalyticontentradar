@@ -1,0 +1,69 @@
+[
+  {
+    "id": "refresh-niw-evidence-map",
+    "title": "Refresh the EB-2 NIW guide with an attorney-reviewed evidence map",
+    "content_type": "Guide refresh",
+    "action": "Improve existing page",
+    "query_cluster": "EB-2 NIW proposed endeavor and evidence",
+    "priority": "High",
+    "priority_basis": "Strong topic-to-service fit and an existing Legalyti guide to improve; query demand and ranking opportunity remain unverified.",
+    "observed_competitor_pattern": "The sampled results include multiple proposed-endeavor guides, examples, templates, and explanations of the Dhanasar framework.",
+    "legalyti_angle": "Add a practical, attorney-reviewed map from proposed endeavor to supporting evidence, with a clear boundary between general information and case-specific advice.",
+    "legalyti_asset": "https://legalyti.ai/guides/eb2-niw-requirements",
+    "next_step": "Connect the guide to the existing NIW service page and its verified free-first-conversation path.",
+    "evidence_urls": [
+      "https://beyondborderglobal.com/resources/eb2-niw-proposed-endeavor-statement",
+      "https://eb1aexperts.com/how-to-write-a-powerful-eb2-niw-proposed-endeavor-statement-with-real-examples-for-tech-professionals",
+      "https://natlawreview.com/article/what-proposed-endeavor-eb-2-niw-case",
+      "https://legalyti.ai/services/eb-2-niw"
+    ],
+    "search_demand": "Unverified; no volume or difficulty data attached",
+    "review_required": ["Immigration attorney", "SEO/content marketer"],
+    "status": "Seed hypothesis; not AI-generated or approved"
+  },
+  {
+    "id": "eb1a-case-led-evidence-content",
+    "title": "Build an EB-1A final-merits explainer anchored in reviewed AAO decisions",
+    "content_type": "Case-led guide / case library enhancement",
+    "action": "Improve existing resource or create supporting guide after content audit",
+    "query_cluster": "EB-1A requirements and evidence",
+    "priority": "Medium",
+    "priority_basis": "Distinctive source material may exist in Legalyti's AAO case resource; content inventory, reuse rights, and attorney capacity must be confirmed first.",
+    "observed_competitor_pattern": "The sampled EB-1A pages explain the criteria and final-merits stage; at least one page organizes evidence and denial pitfalls in detail.",
+    "legalyti_angle": "Use carefully cited, attorney-reviewed decisions to make the evidence discussion more concrete. Do not imply that one appeal predicts another case's outcome.",
+    "legalyti_asset": "https://legalyti.ai/aao-cases",
+    "next_step": "Audit the existing AAO resource and select cases only after attorney review; route readers to the EB-1A service page when they want case-specific help.",
+    "evidence_urls": [
+      "https://usialaw.com/guides/eb-1a-guide",
+      "https://www.ashoorilaw.com/blog/eb1a-criteria/",
+      "https://www.kulenlawfirm.com/blog/eb1a-criteria-evidence",
+      "https://legalyti.ai/aao-cases",
+      "https://legalyti.ai/services/eb-1a"
+    ],
+    "search_demand": "Unverified; no volume or difficulty data attached",
+    "review_required": ["Immigration attorney", "SEO/content marketer"],
+    "status": "Seed hypothesis; not AI-generated or approved"
+  },
+  {
+    "id": "refresh-eb1a-niw-choice-path",
+    "title": "Make the EB-1A versus NIW comparison lead to a responsible next step",
+    "content_type": "Comparison / interactive-tool enhancement",
+    "action": "Improve existing assessment or comparison content; avoid duplicate page until audit",
+    "query_cluster": "EB-1A versus EB-2 NIW",
+    "priority": "Medium",
+    "priority_basis": "Several sampled pages already provide comparisons, so a generic new table may add little. The opportunity depends on whether Legalyti's existing assessment can serve this intent well.",
+    "observed_competitor_pattern": "Comparison pages cover eligibility standards, evidence, processing, backlogs, and whether both pathways may be considered.",
+    "legalyti_angle": "Use the existing immigration assessment and attorney path to help readers organize questions, while avoiding automated eligibility judgments or approval predictions.",
+    "legalyti_asset": "https://legalyti.ai/talentvisas",
+    "next_step": "Check the existing tool's scope and consent flow with product/legal; offer a free start for exploration and a consultation path for individualized legal advice.",
+    "evidence_urls": [
+      "https://tukki.ai/blog/eb2-niw-vs-eb1a",
+      "https://www.kevinjandrewslaw.com/publications/eb1a-vs-niw",
+      "https://manifestlaw.com/blog/eb1a-vs-eb2-niw-green-card-guide",
+      "https://legalyti.ai/talentvisas"
+    ],
+    "search_demand": "Unverified; no volume or difficulty data attached",
+    "review_required": ["Immigration attorney", "Product owner", "SEO/content marketer"],
+    "status": "Seed hypothesis; not AI-generated or approved"
+  }
+]

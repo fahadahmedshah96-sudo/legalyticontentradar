@@ -1,0 +1,47 @@
+[
+  {
+    "id": "manifest-president-international",
+    "competitor": "Manifest Law",
+    "url": "https://manifestlaw.com/press/sophy-king-president-of-international",
+    "title": "Manifest Law adds Sophy King as President of International Immigration",
+    "published_date": "2026-11-03",
+    "news_type": "Leadership / international expansion",
+    "summary": "Manifest announced an appointment to lead its newly launched international business.",
+    "why_it_matters": "Signals investment in international immigration operations. Treat the company's announcement as a company claim, not independent validation of results.",
+    "source_type": "Company announcement",
+    "source_date": "2026-11-18",
+    "location": "United States search",
+    "last_checked": null,
+    "change_status": "seeded"
+  },
+  {
+    "id": "manifest-global-expansion",
+    "competitor": "Manifest Law",
+    "url": "https://manifestlaw.com/press/manifest-global-expansion-100-countries",
+    "title": "Manifest announces expansion to 100+ countries",
+    "published_date": "2026-10-27",
+    "news_type": "Market expansion",
+    "summary": "Manifest announced an international expansion of its immigration services, including support in 100+ countries.",
+    "why_it_matters": "Relevant competitor positioning and expansion signal for a company that also discusses immigration services and software. The stated coverage is from Manifest's own announcement.",
+    "source_type": "Company announcement",
+    "source_date": "2026-11-18",
+    "location": "United States search",
+    "last_checked": null,
+    "change_status": "seeded"
+  },
+  {
+    "id": "tukki-43north-scaling",
+    "competitor": "Tukki",
+    "url": "https://43north.org/tukki-scales-immigration-platform-from-western-new-york/",
+    "title": "Tukki Scales Immigration Platform from Western New York",
+    "published_date": "2026-03-09",
+    "news_type": "Company growth / funding",
+    "summary": "43North reports on Tukki's expansion and references a $1 million investment through the 43North program.",
+    "why_it_matters": "An independent ecosystem publication provides a company-growth signal. Confirm any material figures from primary sources before using them in a decision.",
+    "source_type": "Third-party coverage",
+    "source_date": "2026-11-18",
+    "location": "United States search",
+    "last_checked": null,
+    "change_status": "seeded"
+  }
+]

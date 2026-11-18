@@ -1,0 +1,16 @@
+[
+  {
+    "competitor": "Manifest Law",
+    "source_url": "https://manifestlaw.com/press",
+    "source_type": "Press listing",
+    "include_path": "/press/",
+    "status": "seeded; listing discovery needs runner validation"
+  },
+  {
+    "competitor": "Tukki",
+    "source_url": "https://tukki.ai/press",
+    "source_type": "Press listing",
+    "include_path": "/press",
+    "status": "seeded; listing discovery needs runner validation"
+  }
+]

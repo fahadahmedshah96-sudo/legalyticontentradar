@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A prototype dashboard for competitor SEO content, competitor news, and Legalyti content opportunities.">
+  <title>Legalyti Competitor Content Radar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Legalyti Content Radar home">
+      <span class="brand-mark">L</span>
+      <span>LEGALYTI <span class="brand-muted">CONTENT RADAR</span></span>
+    </a>
+    <div class="status-pill"><span class="status-dot"></span> Pilot snapshot · 18 Nov 2026 · US</div>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="intro">
+      <p class="eyebrow">COMPETITIVE CONTENT INTELLIGENCE</p>
+      <h1>Signals into content decisions.</h1>
+      <p class="lede">A focused pilot for immigration search topics. Competitor observations, company news, and proposed Legalyti content are kept separate and linked to their evidence.</p>
+      <div class="caveat"><strong>Evidence note</strong><span>Seed pages came from TinyFish web search for the United States. Discovery order is not a verified Google ranking. Search volume and keyword difficulty are unverified.</span></div>
+    </section>
+
+    <section class="metrics" aria-label="Pilot snapshot totals">
+      <div class="metric"><span id="count-content" class="metric-value">—</span><span class="metric-label">competitor pages</span></div>
+      <div class="metric"><span id="count-news" class="metric-value">—</span><span class="metric-label">news signals</span></div>
+      <div class="metric"><span id="count-ideas" class="metric-value">—</span><span class="metric-label">content hypotheses</span></div>
+      <div class="metric metric-note"><span class="metric-value">3</span><span class="metric-label">pilot query clusters</span></div>
+    </section>
+
+    <nav class="tabs" role="tablist" aria-label="Radar sections">
+      <button class="tab active" role="tab" id="tab-content" aria-controls="panel-content" aria-selected="true" data-tab="content">Competitor content <span id="tab-count-content" class="tab-count">—</span></button>
+      <button class="tab" role="tab" id="tab-news" aria-controls="panel-news" aria-selected="false" data-tab="news">Competitor news <span id="tab-count-news" class="tab-count">—</span></button>
+      <button class="tab" role="tab" id="tab-opportunities" aria-controls="panel-opportunities" aria-selected="false" data-tab="opportunities">Legalyti opportunities <span id="tab-count-ideas" class="tab-count">—</span></button>
+    </nav>
+
+    <section class="tab-panel" role="tabpanel" id="panel-content" aria-labelledby="tab-content">
+      <div class="panel-heading">
+        <div><h2>Competitor content</h2><p>Guides, articles, service pages, and comparisons discovered for the pilot queries.</p></div>
+        <div class="controls">
+          <label class="sr-only" for="content-filter">Filter competitor content by query cluster</label>
+          <select id="content-filter"><option value="all">All pilot queries</option></select>
+          <select id="content-sort" aria-label="Sort competitor content"><option value="newest">Newest published</option><option value="discovery">Discovery order</option></select>
+        </div>
+      </div>
+      <div id="content-list" class="card-list" aria-live="polite"></div>
+    </section>
+
+    <section class="tab-panel hidden" role="tabpanel" id="panel-news" aria-labelledby="tab-news">
+      <div class="panel-heading">
+        <div><h2>Competitor news</h2><p>Company announcements and independent company coverage. Legal-topic articles stay in the content tab.</p></div>
+        <div class="controls"><select id="news-filter" aria-label="Filter news by competitor"><option value="all">All competitors</option></select></div>
+      </div>
+      <div id="news-list" class="card-list" aria-live="polite"></div>
+    </section>
+
+    <section class="tab-panel hidden" role="tabpanel" id="panel-opportunities" aria-labelledby="tab-opportunities">
+      <div class="panel-heading">
+        <div><h2>What Legalyti could create or improve</h2><p>Research-led hypotheses to review—not approved assignments, volume forecasts, or legal conclusions.</p></div>
+        <div class="controls">
+          <label class="sr-only" for="idea-filter">Filter opportunities by content type</label>
+          <select id="idea-filter"><option value="all">All content types</option></select>
+        </div>
+      </div>
+      <div class="score-note"><strong>How to read priority:</strong> editorial judgment based on relevance, Legalyti fit, differentiation, and readiness. It is not a numeric SEO score.</div>
+      <div id="opportunity-list" class="card-list" aria-live="polite"></div>
+    </section>
+
+    <footer class="footer">
+      <span>Prototype · public-page research only · no user case data</span>
+      <span id="data-status">Loading snapshot…</span>
+    </footer>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

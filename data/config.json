@@ -1,0 +1,13 @@
+{
+  "project_name": "Legalyti Competitor Content Radar",
+  "pilot_location": "United States",
+  "snapshot_date": "2026-11-18",
+  "discovery_provider": "TinyFish public web search",
+  "ranking_caveat": "Discovery order from the selected search connector. It is not a verified Google ranking, keyword position, search-volume estimate, or difficulty score.",
+  "pilot_topics": [
+    "EB-1A requirements and evidence",
+    "EB-2 NIW proposed endeavor and evidence",
+    "EB-1A versus EB-2 NIW"
+  ],
+  "data_status": "Seeded research snapshot; automation scaffold is proposed and not connected to a live GitHub repository yet."
+}
