@@ -5,7 +5,7 @@
     "source_type": "Press listing",
     "include_path": "/press/",
     "status": "seeded; listing discovery needs runner validation",
-    "last_checked": "2026-11-23T19:03:59Z",
+    "last_checked": "2026-11-27T16:26:20Z",
     "http_status": 200
   },
   {
@@ -14,7 +14,7 @@
     "source_type": "Press listing",
     "include_path": "/press",
     "status": "seeded; listing discovery needs runner validation",
-    "last_checked": "2026-11-23T19:03:59Z",
+    "last_checked": "2026-11-27T16:26:20Z",
     "http_status": 200
   }
 ]
